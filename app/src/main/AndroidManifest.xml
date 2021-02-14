@@ -25,15 +25,24 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".WidgetProvider">
+        <receiver android:name=".views.ui.WidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.REFRESH" />
+                <action android:name="android.appwidget.OPEN_MAIN_ACTIVITY" />
+                <action android:name="android.appwidget.OPEN_CONFIG" />
+                <action android:name="android.intent.action.SCREEN_ON" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_provider" />
         </receiver>
+
+        <activity
+            android:name=".views.ui.WidgetDialog"
+            android:theme="@style/Theme.MaterialComponents.Light.Dialog" />
+
     </application>
 
 </manifest>

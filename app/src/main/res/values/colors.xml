@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="all_blue">#00AFF0</color>
+    <color name="all_blue_2">#00BAFF</color>
+    <color name="all_blue_alpha80">#CC00AFF0</color>
+    <color name="all_blue_weak">#2D00BAFF</color>
+    <color name="all_yellow">#FFCE00</color>
+    <color name="all_yellow_weak">#48FFE05D</color>
+    <color name="all_red">#F76F6F</color>
+    <color name="all_red_week">#4AF76F6F</color>
+    <color name="all_green">#3ADEA5</color>
 </resources>

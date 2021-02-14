@@ -4,10 +4,7 @@ import com.example.ecocast_widget.models.model.JsonResultModel;
 import com.example.ecocast_widget.models.model.VentilationTimeModel;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-import com.google.gson.stream.JsonReader;
 
-import java.io.StringReader;
 import java.util.HashMap;
 import java.util.List;
 
@@ -65,13 +62,5 @@ public class RetrofitHttpConnection {
         }
 
         return model;
-    }
-
-    public <T> List<T> conversion(String json, Class<T> clazz) {
-        JsonReader reader = new JsonReader(new StringReader(json));
-        reader.setLenient(true);
-        List<T> result = gson.fromJson(reader, new TypeToken<List<T>>() {
-        }.getType());
-        return result;
     }
 }

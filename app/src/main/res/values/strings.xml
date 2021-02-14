@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ecocast_Widget</string>
+    <string name="error_network">Can\'t connect to server. Please try again later.</string>
 </resources>

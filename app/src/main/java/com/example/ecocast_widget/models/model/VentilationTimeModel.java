@@ -6,10 +6,10 @@ public class VentilationTimeModel {
     private String station_name;
     private double minute;
     private double pm_10_value;
-    private String pm_10_grade;
+    private double pm_10_grade;
     private double pm_10_grade_num;
     private double pm_25_value;
-    private String pm_25_grade;
+    private double pm_25_grade;
     private double pm_25_grade_num;
     private String standard;
     private String message;
@@ -54,11 +54,11 @@ public class VentilationTimeModel {
         this.pm_10_value = pm_10_value;
     }
 
-    public String getPm_10_grade() {
+    public double getPm_10_grade() {
         return pm_10_grade;
     }
 
-    public void setPm_10_grade(String pm_10_grade) {
+    public void setPm_10_grade(double pm_10_grade) {
         this.pm_10_grade = pm_10_grade;
     }
 
@@ -78,11 +78,11 @@ public class VentilationTimeModel {
         this.pm_25_value = pm_25_value;
     }
 
-    public String getPm_25_grade() {
+    public double getPm_25_grade() {
         return pm_25_grade;
     }
 
-    public void setPm_25_grade(String pm_25_grade) {
+    public void setPm_25_grade(double pm_25_grade) {
         this.pm_25_grade = pm_25_grade;
     }
 

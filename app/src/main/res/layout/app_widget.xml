@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_background"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/round_corner_all_blue"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".views.ui.WidgetProvider">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_app_widget_location"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/app_widget_location_icon" />
+
+        <TextView
+            android:id="@+id/tv_app_widget_announce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="----- ----- (----.--.-- --:-- 발표)"
+            android:textColor="#FFFFFF"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_app_widget_redo"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/app_widget_redo_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_app_widget_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_app_widget_dust_grade"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/app_widget_level_icon" />
+
+            <TextView
+                android:id="@+id/tv_app_widget_dust_grade"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:lineSpacingExtra="-3dp"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_app_widget_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="새로고침을 눌러주세요."
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
